@@ -1,0 +1,165 @@
+html{
+	margin : 0;
+	font-family: Century Gothic;
+	background-color : rgb(250,250,250);
+	box-sizing: border-box;
+}
+.header{
+	position: sticky;
+	top : 0;
+	display : block;
+	width : 100%;
+	height : 13%;
+	background-color : rgb(250,250,250);
+	box-shadow : 0px 3px rgb(50,50,50);
+}
+.navbar{
+	position: sticky;
+	display : block;
+	align-items: center;
+	justify-content : center;
+	width : 100%;
+	height : 95%;
+}
+
+.logo{ /*resize logo*/
+	width: 180px;
+	height: 70px;
+}
+
+.main{
+	top : 14%;
+	display : block;
+	width : 100%;
+	height : 87%;
+	background-color: rgb(230,230,230);
+}
+
+.boxL { /*boks kiri*/
+	float: left;
+	width: 22%;
+	padding: 10px;
+	background-color: rgb(250,250,250);
+	box-shadow : 3px 3px rgb(50,50,50);
+}
+.boxspace { /*ngasih spasi antar boks*/
+	float: left;
+	width: 1%;
+	padding: 10px;
+}
+.boxR { /*boks kanan*/
+	float: left;
+	width: 50%;
+	height: 85%;
+	padding: 20px;
+	background-color: rgb(250,250,250);
+	box-shadow : 3px 3px rgb(50,50,50);
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.jam { 
+    font-size: 50px;
+	text-align: center;
+	font-weight: bold-italic;
+	color: rgb(113,203,101);
+}
+
+hr{
+	border-top: 1px rgb(50,50,50);
+}
+
+ul.credit{
+	font-size: 15px;	
+	color: rgb(224,203,101);
+}
+
+
+
+span { /*ngasih tulisan hijau*/
+	color: rgb(113,203,101);
+}
+
+.addBtn { /*button add*/
+	float:left;
+	padding: 5px;
+	width: 15%;
+	height: 20px;
+	background: rgb(113,203,101);
+	color: rgb(50,50,50);
+	text-align: center;
+	font-size: 16px;
+	transition: 0.15s;
+}
+
+
+.addBtn:Hover {
+	float:left;
+	padding: 5px;
+	width: 16%;
+	height: 20px;
+	background: rgb(50,50,50);
+	color: rgb(113,203,101);
+	text-align: center;
+	font-size: 16px;
+	transition: 0.15s;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.input_text { /*textbox buat di add*/
+	float: left;
+	width: 80%;
+	height: 30px;
+	padding: 5px;
+	border: none;
+}
+
+ul.utama { /*daftar list*/
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 10px;
+	background: rgb(250,250,250);
+	color: rgb(50,50,50);
+	font-size: 18px;
+	transition: 0.2s;
+	padding: none;
+	list-style: none;
+	line-height: 30px;
+	background-image: url(warn.png) no-repeat;
+}
+ul.utama li.checked{
+	background-color: rgb(242,242,195);
+	
+}	
+
+ul.utama li:hover {
+	background: rgb(240,240,150);
+}
+
+ul.utama li.checked { /*seandainya di-click*/
+	background-color: rgb(113,203,101);
+	text-decoration: line-through;
+	color: #ddd;
+}
+
+.close { /*close button*/
+  position: absolute;
+  right: 0;
+  padding: 0px 15px 0px 15px;
+  color: rgb(50,50,50);
+}
+
+.close:hover {
+  font-size: 20px;
+  right: 0;
+  color: rgb(250,250,250);
+  font-weight: bold;
+  transition: 0.1s;
+  padding: 0px 15px 0px 15px;
+  background-color: rgb(250,85,85);
+}

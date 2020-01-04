@@ -1,0 +1,57 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<div class="navbar">
+			<center><img class="logo" src="Logo.png"></center>
+		</div>
+	</div>
+	
+	<div class="main"><br>
+		<div class="clearfix">
+			<div class="boxspace">
+			</div>
+			
+			<div class="boxL"> <!-- Boks kiri -->
+				<b>Current Time:</b>
+				<div id="waktu" class="jam" onload="waktu()"></div>
+				<br><hr><br>
+				<b>Created by</b>
+				<p>Kelompok SuperPower</p>
+				<ul class="credit">
+					<li>Christopher Ivan Gunardi <span>[Kel. 1]</span></li>
+					<li>Nabila Farras Ammara Mumtaz <span> [Kel. 8]</span></li>
+				</ul>
+			</div>	
+			
+			<div class="boxspace">
+			</div>
+			
+			<div class="boxR"> <!-- Boks kanan -->
+				
+				<div class="Input">
+				
+				<h2> Today I <span>need</span> to...</h2>
+				
+					<input type="text" id="input_text" class="input_text" placeholder="Add something here...">
+					
+					<span onclick="tambah()" class="addBtn">Add</span><br>
+				</div>
+				
+					<ul class="utama" id="my_UL">
+						<li>Makan</li>
+						<li class="checked">Buat daftar lantiq</li>
+						<li>Bayar utang</li>
+					</ul>
+				
+			</div>
+		</div>
+			
+		<div class="boxspace">
+		</div>
+	</div>	
+<script src="code.js"></script>
+</body>
+</html>
